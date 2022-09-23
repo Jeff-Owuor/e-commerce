@@ -17,6 +17,10 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/',[ProductController::class,'index']);
 Route::get('detail/{id}',[ProductController::class,'detail']);
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::post('/login',[UserContro ller::class,'login']);
 Route::post('add_to_cart',[ProductController::class,'addToCart']);
 
 Auth::routes();
